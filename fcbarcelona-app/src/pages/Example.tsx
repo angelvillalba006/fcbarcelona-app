@@ -1,10 +1,10 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 
-const HomePage = () => {
+const ExamplePage = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Home Page</Text>
+      <Text style={styles.text}>Sample Page</Text>
     </View>
   );
 };
@@ -23,4 +23,4 @@ const styles = StyleSheet.create({
 });
 
 // Export der Komponente für die Verwendung in anderen Dateien
-export default HomePage;
+export default ExamplePage;
