@@ -43,3 +43,43 @@ git checkout -b FE/feature/user-authentication
 # Switch to an existing branch
 git checkout FE/feature/user-authentication
 ```
+
+### Pulling Changes from the Remote Repository
+
+```bash
+# Pull changes from remote repo
+git pull origin main
+```
+
+### Merging Branches
+
+```bash
+# Switch to the target branch (e.g., develop)
+git checkout develop
+
+# Update the main branch with changes from the remote repository
+git pull origin main
+
+# Merge the feature branch into develop
+git merge FE/feature/user-authentication
+
+# Push the changes to the remote repository
+git push origin develop
+```
+
+### Deleting a Branch
+
+```bash
+# Delete a local branch
+git branch -d FE/feature/user-authentication
+
+# Delete a remote branch
+git push origin --delete FE/feature/user-authentication
+```
+
+## Pull Requests
+
+1. Create a branch and add your changes.
+2. Make a Pull Request from your branch to the develop branch.
+3. Discuss and review changes (with team members).
+4. Perform the merge when the Pull Request is approved.
